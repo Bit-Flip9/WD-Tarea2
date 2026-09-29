@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2 - CSS3 y Posicionamiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Portafolio y Demostración de CSS3</h1>
+        <p>Evaluación de Modelo de Caja, Posicionamiento y Flexbox</p>
+    </header>
+
+    <main class="main-container">
+        <!-- Sección 1: Modelo de Caja y Display -->
+        <section class="box-model-section">
+            <h2>1. Modelo de Caja y Display</h2>
+            <div class="caja block-box">Elemento de Bloque</div>
+            <span class="caja inline-box">Elemento Inline</span>
+            <div class="caja inline-block-box">Elemento Inline-Block</div>
+        </section>
+
+        <!-- Sección 2: Posicionamiento y Z-Index -->
+        <section class="position-section">
+            <h2>2. Posicionamiento y Z-Index</h2>
+            <div class="contenedor-relativo">
+                <div class="caja-base absolute-box-1">Caja Absolute 1</div>
+                <div class="caja-base absolute-box-2">Caja Absolute 2 (Z-Index)</div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Flexbox Responsivo -->
+        <section class="flex-section">
+            <h2>3. Contenedor Flexbox</h2>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Propiedades Adicionales (Float, Clear, Overflow, Visibility, Position Fixed) -->
+        <section class="extra-properties-section">
+            <h2>4. Visualización, Float, Overflow y Visibility</h2>
+            
+            <!-- Float y Clear -->
+            <div class="float-container">
+                <div class="box-float">Caja Flotante (Float)</div>
+                <p>Este texto fluye alrededor de la caja flotante demostrando el comportamiento de la propiedad float en CSS3.</p>
+                <div class="clear-fix"></div>
+            </div>
+
+            <!--  Overflow -->
+            <div class="overflow-box">
+                <p><strong>Overflow Scroll:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Este texto es muy largo para forzar el desbordamiento dentro de esta caja pequeña y mostrar la barra de desplazamiento.</p>
+            </div>
+
+            <!--  Visibility -->
+            <div class="visibility-demo">
+                <div class="visible-item">Elemento Visible</div>
+                <div class="hidden-item">Elemento Oculto (visibility: hidden) - Deja el espacio vacío</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--  Position Fixed  -->
+        <div class="fixed-badge">Position Fixed</div>
+
+    <footer class="site-footer">
+        <p>Ingeniería del Software - Universidad Técnica Nacional</p>
+    </footer>
+
+</body>
+</html>
